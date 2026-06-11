@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, HIS NAME ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b1020;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+background:linear-gradient(90deg,#66d9ff,#ff8fd8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+max-width:700px;
+font-size:1.2rem;
+line-height:1.8;
+opacity:.9;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ff5ca8;
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:2.5rem;
+margin-bottom:40px;
+text-align:center;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.06);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.timeline{
+max-width:900px;
+margin:auto;
+}
+
+.timeline-item{
+margin-bottom:40px;
+padding-left:25px;
+border-left:3px solid #66d9ff;
+}
+
+.timeline-item h3{
+color:#66d9ff;
+margin-bottom:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.message-box{
+max-width:900px;
+margin:auto;
+background:rgba(255,255,255,.05);
+padding:40px;
+border-radius:20px;
+text-align:center;
+font-size:1.2rem;
+line-height:2;
+}
+
+.counter{
+font-size:3rem;
+font-weight:bold;
+color:#ff8fd8;
+margin-top:20px;
+}
+
+.hidden-note{
+display:none;
+margin-top:20px;
+padding:20px;
+background:#1a2140;
+border-radius:15px;
+}
+
+footer{
+text-align:center;
+padding:50px;
+opacity:.7;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<section class="hero">
+<h1>The Quantum Birthday Mystery</h1>
+
+<p>
+
+Dear HIS NAME,
+
+After extensive investigation involving particle physics,
+crime-solving expertise, and countless shared memories,
+I have arrived at one undeniable conclusion:
+
+You are my favorite person in every universe.
+
+❤️
+
+</p>
+
+<button class="btn"
+onclick="document.getElementById('journey').scrollIntoView({behavior:'smooth'})">
+Begin Investigation
+</button>
+
+<div class="counter" id="countdown"></div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">🔬 Evidence Board</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Exhibit A: The Physicist</h3>
+<p>
+Studies particles smaller than imagination.
+Helps explain the universe.
+Still occasionally misplaces everyday things.
+</p>
+</div>
+
+<div class="card">
+<h3>Exhibit B: The Detective</h3>
+<p>
+Can identify the villain before everyone else.
+Has watched enough crime shows to qualify as honorary law enforcement.
+</p>
+</div>
+
+<div class="card">
+<h3>Exhibit C: The Food Explorer</h3>
+<p>
+Fearlessly investigates vegetarian cuisines from around the world.
+A true culinary adventurer.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="journey">
+
+<h2 class="section-title">🚀 Our Journey Through Space-Time</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>How We Met</h3>
+<p>WRITE YOUR STORY HERE</p>
+</div>
+
+<div class="timeline-item">
+<h3>First Date</h3>
+<p>WRITE YOUR MEMORY HERE</p>
+</div>
+
+<div class="timeline-item">
+<h3>Our Wedding</h3>
+<p>WRITE YOUR MEMORY HERE</p>
+</div>
+
+<div class="timeline-item">
+<h3>Favorite Adventure</h3>
+<p>WRITE YOUR MEMORY HERE</p>
+</div>
+
+<div class="timeline-item">
+<h3>Today</h3>
+<p>Still my favorite person.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">🌍 Vegetarian Multiverse</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🍝 Italian Universe</h3>
+<p>
+Somewhere in the multiverse you're eating
+the perfect vegetarian pasta.
+</p>
+</div>
+
+<div class="card">
+<h3>🌮 Mexican Universe</h3>
+<p>
+A new taco discovery has changed your life.
+</p>
+</div>
+
+<div class="card">
+<h3>🍜 Asian Universe</h3>
+<p>
+You have found legendary dumplings.
+</p>
+</div>
+
+<div class="card">
+<h3>🥘 Indian Universe</h3>
+<p>
+Every meal comes with extra happiness.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">📸 Favorite Moments</h2>
+
+<div class="gallery">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+
+</div>
+
+<p style="text-align:center;margin-top:20px;">
+Replace photo1.jpg etc. with your own photos.
+</p>
+
+</section>
+
+<section>
+
+<h2 class="section-title">🕵️ Final Case Report</h2>
+
+<div class="message-box">
+
+After years of observation,
+careful analysis,
+and overwhelming experimental evidence,
+
+the results are conclusive.
+
+<br><br>
+
+The probability that I love you
+is not merely high.
+
+It is 100%.
+
+<br><br>
+
+The probability that I would choose you
+again in every universe?
+
+Also 100%.
+
+<br><br>
+
+Happy Birthday ❤️
+
+<br><br>
+
+Love,
+
+<br>
+
+YOUR NAME
+
+<button class="btn" onclick="showNote()">
+Reveal Classified Information
+</button>
+
+<div class="hidden-note" id="secret">
+
+CONFIDENTIAL REPORT:
+
+You are loved more than words can explain.
+
+Thank you for every laugh,
+every adventure,
+every conversation,
+and every day we share together.
+
+Happy Birthday ❤️
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Made with love across space, time,
+and all known dimensions.
+
+</footer>
+
+<script>
+
+function showNote(){
+document.getElementById("secret").style.display="block";
+}
+
+const targetDate = new Date("June 15, 2026 00:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+const distance = targetDate - now;
+
+if(distance < 0){
+document.getElementById("countdown").innerHTML =
+"🎂 HAPPY BIRTHDAY!";
+return;
+}
+
+const days = Math.floor(distance/(1000*60*60*24));
+const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("countdown").innerHTML =
+days + " days " + hours + " hrs";
+
+},1000);
+
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for(let i=0;i<100;i++){
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*3,
+dx:(Math.random()-0.5),
+dy:(Math.random()-0.5)
+});
+}
+
+function animate(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles.forEach(p=>{
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+ctx.fillStyle="#66d9ff";
+ctx.fill();
+
+p.x+=p.dx;
+p.y+=p.dy;
+
+if(p.x<0||p.x>canvas.width)p.dx*=-1;
+if(p.y<0||p.y>canvas.height)p.dy*=-1;
+});
+
+requestAnimationFrame(animate);
+}
+
+animate();
+
+</script>
+
+</body>
+</html>
